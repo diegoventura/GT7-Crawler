@@ -22,6 +22,7 @@
 		DF6E735728577CC800EEB649 /* RawRepresentable+Initializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6E735628577CC800EEB649 /* RawRepresentable+Initializer.swift */; };
 		DF6E735A28577D0800EEB649 /* Formatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6E735928577D0800EEB649 /* Formatters.swift */; };
 		DF6E735C28577E0200EEB649 /* Parser+Information.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6E735B28577E0200EEB649 /* Parser+Information.swift */; };
+		DF6E735E2857926700EEB649 /* Parser+Tags.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6E735D2857926700EEB649 /* Parser+Tags.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -52,6 +53,7 @@
 		DF6E735628577CC800EEB649 /* RawRepresentable+Initializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RawRepresentable+Initializer.swift"; sourceTree = "<group>"; };
 		DF6E735928577D0800EEB649 /* Formatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatters.swift; sourceTree = "<group>"; };
 		DF6E735B28577E0200EEB649 /* Parser+Information.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Parser+Information.swift"; sourceTree = "<group>"; };
+		DF6E735D2857926700EEB649 /* Parser+Tags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Parser+Tags.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 				DF6E73482857799500EEB649 /* Parser.swift */,
 				DF6E734B28577B7200EEB649 /* Parser+Specs.swift */,
 				DF6E735B28577E0200EEB649 /* Parser+Information.swift */,
+				DF6E735D2857926700EEB649 /* Parser+Tags.swift */,
 			);
 			path = Parsers;
 			sourceTree = "<group>";
@@ -216,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF6E734C28577B7200EEB649 /* Parser+Specs.swift in Sources */,
+				DF6E735E2857926700EEB649 /* Parser+Tags.swift in Sources */,
 				DF6E735A28577D0800EEB649 /* Formatters.swift in Sources */,
 				DF6E73422857793500EEB649 /* Photo.swift in Sources */,
 				DF6E735028577C6900EEB649 /* Aspiration.swift in Sources */,

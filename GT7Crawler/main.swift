@@ -13,11 +13,13 @@ do {
     let information = parser.parseInformation()
     let photoGallery = parser.parsePhotoGallery()
     let specification = parser.parseSpecification()
+    let tags = parser.parseTags()
 
     print(information.carName)
     print(information.manufacturer)
     print(photoGallery)
     print(specification)
+    print(tags)
 } catch {
     print("error")
 }
