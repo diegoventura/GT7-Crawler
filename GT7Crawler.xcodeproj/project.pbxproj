@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DF6E73342857601500EEB649 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6E73332857601500EEB649 /* main.swift */; };
+		DF6E733C2857605900EEB649 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = DF6E733B2857605900EEB649 /* SwiftSoup */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF6E733C2857605900EEB649 /* SwiftSoup in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +80,9 @@
 			dependencies = (
 			);
 			name = GT7Crawler;
+			packageProductDependencies = (
+				DF6E733B2857605900EEB649 /* SwiftSoup */,
+			);
 			productName = GT7Crawler;
 			productReference = DF6E73302857601500EEB649 /* GT7Crawler */;
 			productType = "com.apple.product-type.tool";
@@ -106,6 +111,9 @@
 				Base,
 			);
 			mainGroup = DF6E73272857601400EEB649;
+			packageReferences = (
+				DF6E733A2857605900EEB649 /* XCRemoteSwiftPackageReference "SwiftSoup" */,
+			);
 			productRefGroup = DF6E73312857601500EEB649 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -280,6 +288,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DF6E733A2857605900EEB649 /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scinfu/SwiftSoup.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DF6E733B2857605900EEB649 /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DF6E733A2857605900EEB649 /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DF6E73282857601400EEB649 /* Project object */;
 }
