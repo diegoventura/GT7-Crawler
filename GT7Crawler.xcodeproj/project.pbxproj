@@ -14,6 +14,13 @@
 		DF6E73442857795700EEB649 /* PhotoGallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6E73432857795700EEB649 /* PhotoGallery.swift */; };
 		DF6E73472857798B00EEB649 /* Parser+PhotoGallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6E73462857798B00EEB649 /* Parser+PhotoGallery.swift */; };
 		DF6E73492857799500EEB649 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6E73482857799500EEB649 /* Parser.swift */; };
+		DF6E734C28577B7200EEB649 /* Parser+Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6E734B28577B7200EEB649 /* Parser+Specs.swift */; };
+		DF6E734E28577C5A00EEB649 /* Transmission.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6E734D28577C5A00EEB649 /* Transmission.swift */; };
+		DF6E735028577C6900EEB649 /* Aspiration.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6E734F28577C6900EEB649 /* Aspiration.swift */; };
+		DF6E735228577C7800EEB649 /* CarGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6E735128577C7800EEB649 /* CarGroup.swift */; };
+		DF6E735428577C8600EEB649 /* Specification.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6E735328577C8600EEB649 /* Specification.swift */; };
+		DF6E735728577CC800EEB649 /* RawRepresentable+Initializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6E735628577CC800EEB649 /* RawRepresentable+Initializer.swift */; };
+		DF6E735A28577D0800EEB649 /* Formatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6E735928577D0800EEB649 /* Formatters.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -36,6 +43,13 @@
 		DF6E73432857795700EEB649 /* PhotoGallery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGallery.swift; sourceTree = "<group>"; };
 		DF6E73462857798B00EEB649 /* Parser+PhotoGallery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Parser+PhotoGallery.swift"; sourceTree = "<group>"; };
 		DF6E73482857799500EEB649 /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		DF6E734B28577B7200EEB649 /* Parser+Specs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Parser+Specs.swift"; sourceTree = "<group>"; };
+		DF6E734D28577C5A00EEB649 /* Transmission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transmission.swift; sourceTree = "<group>"; };
+		DF6E734F28577C6900EEB649 /* Aspiration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aspiration.swift; sourceTree = "<group>"; };
+		DF6E735128577C7800EEB649 /* CarGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarGroup.swift; sourceTree = "<group>"; };
+		DF6E735328577C8600EEB649 /* Specification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Specification.swift; sourceTree = "<group>"; };
+		DF6E735628577CC800EEB649 /* RawRepresentable+Initializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RawRepresentable+Initializer.swift"; sourceTree = "<group>"; };
+		DF6E735928577D0800EEB649 /* Formatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatters.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +83,8 @@
 		DF6E73322857601500EEB649 /* GT7Crawler */ = {
 			isa = PBXGroup;
 			children = (
+				DF6E735828577CF500EEB649 /* Formatters */,
+				DF6E735528577C9B00EEB649 /* Protocols */,
 				DF6E734A28577A6200EEB649 /* Extensions */,
 				DF6E73452857797900EEB649 /* Parsers */,
 				DF6E73402857792B00EEB649 /* Models */,
@@ -91,6 +107,10 @@
 			children = (
 				DF6E73412857793500EEB649 /* Photo.swift */,
 				DF6E73432857795700EEB649 /* PhotoGallery.swift */,
+				DF6E734D28577C5A00EEB649 /* Transmission.swift */,
+				DF6E734F28577C6900EEB649 /* Aspiration.swift */,
+				DF6E735128577C7800EEB649 /* CarGroup.swift */,
+				DF6E735328577C8600EEB649 /* Specification.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -100,6 +120,7 @@
 			children = (
 				DF6E73462857798B00EEB649 /* Parser+PhotoGallery.swift */,
 				DF6E73482857799500EEB649 /* Parser.swift */,
+				DF6E734B28577B7200EEB649 /* Parser+Specs.swift */,
 			);
 			path = Parsers;
 			sourceTree = "<group>";
@@ -107,8 +128,24 @@
 		DF6E734A28577A6200EEB649 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				DF6E735628577CC800EEB649 /* RawRepresentable+Initializer.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DF6E735528577C9B00EEB649 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		DF6E735828577CF500EEB649 /* Formatters */ = {
+			isa = PBXGroup;
+			children = (
+				DF6E735928577D0800EEB649 /* Formatters.swift */,
+			);
+			path = Formatters;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,12 +212,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF6E734C28577B7200EEB649 /* Parser+Specs.swift in Sources */,
+				DF6E735A28577D0800EEB649 /* Formatters.swift in Sources */,
 				DF6E73422857793500EEB649 /* Photo.swift in Sources */,
+				DF6E735028577C6900EEB649 /* Aspiration.swift in Sources */,
 				DF6E73342857601500EEB649 /* main.swift in Sources */,
 				DF6E73492857799500EEB649 /* Parser.swift in Sources */,
 				DF6E733F285760B700EEB649 /* Data.swift in Sources */,
+				DF6E735428577C8600EEB649 /* Specification.swift in Sources */,
 				DF6E73442857795700EEB649 /* PhotoGallery.swift in Sources */,
 				DF6E73472857798B00EEB649 /* Parser+PhotoGallery.swift in Sources */,
+				DF6E735228577C7800EEB649 /* CarGroup.swift in Sources */,
+				DF6E735728577CC800EEB649 /* RawRepresentable+Initializer.swift in Sources */,
+				DF6E734E28577C5A00EEB649 /* Transmission.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

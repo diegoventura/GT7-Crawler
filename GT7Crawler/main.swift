@@ -11,8 +11,10 @@ do {
     let parser = try Parser(Data.car5)
     
     let photoGallery = parser.parsePhotoGallery()
+    let specification = parser.parseSpecification()
 
     print(photoGallery)
+    print(specification)
 } catch {
     print("error")
 }

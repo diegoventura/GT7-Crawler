@@ -9,7 +9,7 @@ import Foundation
 import SwiftSoup
 
 struct Parser {
-    private let document: Document
+    let document: Document
     
     init(_ string: String) throws {
         document = try SwiftSoup.parse(string)
