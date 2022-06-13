@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF2960DE28579F5300C68A5A /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2960DD28579F5300C68A5A /* Car.swift */; };
 		DF2960E028579FB500C68A5A /* Stats.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2960DF28579FB500C68A5A /* Stats.swift */; };
 		DF6E73342857601500EEB649 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6E73332857601500EEB649 /* main.swift */; };
 		DF6E733C2857605900EEB649 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = DF6E733B2857605900EEB649 /* SwiftSoup */; };
@@ -41,6 +42,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		DF2960DD28579F5300C68A5A /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		DF2960DF28579FB500C68A5A /* Stats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stats.swift; sourceTree = "<group>"; };
 		DF6E73302857601500EEB649 /* GT7Crawler */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GT7Crawler; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF6E73332857601500EEB649 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				DF6E734F28577C6900EEB649 /* Aspiration.swift */,
+				DF2960DD28579F5300C68A5A /* Car.swift */,
 				DF6E735128577C7800EEB649 /* CarGroup.swift */,
 				DF6E73412857793500EEB649 /* Photo.swift */,
 				DF6E73432857795700EEB649 /* PhotoGallery.swift */,
@@ -242,6 +245,7 @@
 				DF6E73442857795700EEB649 /* PhotoGallery.swift in Sources */,
 				DF6E73472857798B00EEB649 /* Parser+PhotoGallery.swift in Sources */,
 				DF6E735228577C7800EEB649 /* CarGroup.swift in Sources */,
+				DF2960DE28579F5300C68A5A /* Car.swift in Sources */,
 				DF6E735728577CC800EEB649 /* RawRepresentable+Initializer.swift in Sources */,
 				DF6E734E28577C5A00EEB649 /* Transmission.swift in Sources */,
 				DF6E735C28577E0200EEB649 /* Parser+Information.swift in Sources */,

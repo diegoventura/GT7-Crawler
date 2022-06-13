@@ -16,14 +16,19 @@ do {
     let tags = parser.parseTags()
     let source = parser.parseSource()
     let stats = parser.parseStats()
-
-    print(information.carName)
-    print(information.manufacturer)
-    print(photoGallery)
-    print(specification)
-    print(tags)
-    print(source)
-    print(stats)
+    
+    let car = Car(identifier: information.identifier,
+                  name: information.carName,
+                  manufacturer: information.manufacturer,
+                  coverImage: Photo(thumbnail: "https://www.kudosprime.com/gt7/images/cars/side/gt7_car_\(String(format: "%03d", Int(information.identifier)!)).jpg",
+                                    highResolution: "https://www.kudosprime.com/gt7/images/cars/big/gt7_car_\(String(format: "%03d", Int(information.identifier)!)).jpg"),
+                  specification: specification!,
+                  photoGallery: photoGallery,
+                  stats: stats,
+                  tags: tags,
+                  source: source)
+    
+    print(car)
 } catch {
     print("error")
 }
