@@ -15,6 +15,7 @@ do {
     let specification = parser.parseSpecification()
     let tags = parser.parseTags()
     let source = parser.parseSource()
+    let stats = parser.parseStats()
 
     print(information.carName)
     print(information.manufacturer)
@@ -22,6 +23,7 @@ do {
     print(specification)
     print(tags)
     print(source)
+    print(stats)
 } catch {
     print("error")
 }
