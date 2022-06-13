@@ -7,5 +7,12 @@
 
 import Foundation
 
-print("Hello, World!")
+do {
+    let parser = try Parser(Data.car5)
+    
+    let photoGallery = parser.parsePhotoGallery()
 
+    print(photoGallery)
+} catch {
+    print("error")
+}

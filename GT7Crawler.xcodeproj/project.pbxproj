@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		DF6E73342857601500EEB649 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6E73332857601500EEB649 /* main.swift */; };
 		DF6E733C2857605900EEB649 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = DF6E733B2857605900EEB649 /* SwiftSoup */; };
+		DF6E733F285760B700EEB649 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6E733E285760B700EEB649 /* Data.swift */; };
+		DF6E73422857793500EEB649 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6E73412857793500EEB649 /* Photo.swift */; };
+		DF6E73442857795700EEB649 /* PhotoGallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6E73432857795700EEB649 /* PhotoGallery.swift */; };
+		DF6E73472857798B00EEB649 /* Parser+PhotoGallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6E73462857798B00EEB649 /* Parser+PhotoGallery.swift */; };
+		DF6E73492857799500EEB649 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6E73482857799500EEB649 /* Parser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,6 +31,11 @@
 /* Begin PBXFileReference section */
 		DF6E73302857601500EEB649 /* GT7Crawler */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GT7Crawler; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF6E73332857601500EEB649 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		DF6E733E285760B700EEB649 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		DF6E73412857793500EEB649 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		DF6E73432857795700EEB649 /* PhotoGallery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGallery.swift; sourceTree = "<group>"; };
+		DF6E73462857798B00EEB649 /* Parser+PhotoGallery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Parser+PhotoGallery.swift"; sourceTree = "<group>"; };
+		DF6E73482857799500EEB649 /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,9 +69,46 @@
 		DF6E73322857601500EEB649 /* GT7Crawler */ = {
 			isa = PBXGroup;
 			children = (
+				DF6E734A28577A6200EEB649 /* Extensions */,
+				DF6E73452857797900EEB649 /* Parsers */,
+				DF6E73402857792B00EEB649 /* Models */,
+				DF6E733D285760A700EEB649 /* Data */,
 				DF6E73332857601500EEB649 /* main.swift */,
 			);
 			path = GT7Crawler;
+			sourceTree = "<group>";
+		};
+		DF6E733D285760A700EEB649 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				DF6E733E285760B700EEB649 /* Data.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		DF6E73402857792B00EEB649 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DF6E73412857793500EEB649 /* Photo.swift */,
+				DF6E73432857795700EEB649 /* PhotoGallery.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DF6E73452857797900EEB649 /* Parsers */ = {
+			isa = PBXGroup;
+			children = (
+				DF6E73462857798B00EEB649 /* Parser+PhotoGallery.swift */,
+				DF6E73482857799500EEB649 /* Parser.swift */,
+			);
+			path = Parsers;
+			sourceTree = "<group>";
+		};
+		DF6E734A28577A6200EEB649 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,7 +175,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF6E73422857793500EEB649 /* Photo.swift in Sources */,
 				DF6E73342857601500EEB649 /* main.swift in Sources */,
+				DF6E73492857799500EEB649 /* Parser.swift in Sources */,
+				DF6E733F285760B700EEB649 /* Data.swift in Sources */,
+				DF6E73442857795700EEB649 /* PhotoGallery.swift in Sources */,
+				DF6E73472857798B00EEB649 /* Parser+PhotoGallery.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
