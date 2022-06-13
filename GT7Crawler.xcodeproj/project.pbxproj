@@ -21,6 +21,7 @@
 		DF6E735428577C8600EEB649 /* Specification.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6E735328577C8600EEB649 /* Specification.swift */; };
 		DF6E735728577CC800EEB649 /* RawRepresentable+Initializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6E735628577CC800EEB649 /* RawRepresentable+Initializer.swift */; };
 		DF6E735A28577D0800EEB649 /* Formatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6E735928577D0800EEB649 /* Formatters.swift */; };
+		DF6E735C28577E0200EEB649 /* Parser+Information.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6E735B28577E0200EEB649 /* Parser+Information.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -50,6 +51,7 @@
 		DF6E735328577C8600EEB649 /* Specification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Specification.swift; sourceTree = "<group>"; };
 		DF6E735628577CC800EEB649 /* RawRepresentable+Initializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RawRepresentable+Initializer.swift"; sourceTree = "<group>"; };
 		DF6E735928577D0800EEB649 /* Formatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatters.swift; sourceTree = "<group>"; };
+		DF6E735B28577E0200EEB649 /* Parser+Information.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Parser+Information.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 				DF6E73462857798B00EEB649 /* Parser+PhotoGallery.swift */,
 				DF6E73482857799500EEB649 /* Parser.swift */,
 				DF6E734B28577B7200EEB649 /* Parser+Specs.swift */,
+				DF6E735B28577E0200EEB649 /* Parser+Information.swift */,
 			);
 			path = Parsers;
 			sourceTree = "<group>";
@@ -225,6 +228,7 @@
 				DF6E735228577C7800EEB649 /* CarGroup.swift in Sources */,
 				DF6E735728577CC800EEB649 /* RawRepresentable+Initializer.swift in Sources */,
 				DF6E734E28577C5A00EEB649 /* Transmission.swift in Sources */,
+				DF6E735C28577E0200EEB649 /* Parser+Information.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
