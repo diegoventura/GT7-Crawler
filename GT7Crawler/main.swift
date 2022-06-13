@@ -14,12 +14,14 @@ do {
     let photoGallery = parser.parsePhotoGallery()
     let specification = parser.parseSpecification()
     let tags = parser.parseTags()
+    let source = parser.parseSource()
 
     print(information.carName)
     print(information.manufacturer)
     print(photoGallery)
     print(specification)
     print(tags)
+    print(source)
 } catch {
     print("error")
 }
