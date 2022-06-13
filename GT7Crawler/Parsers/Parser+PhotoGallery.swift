@@ -17,7 +17,7 @@ extension Parser {
             
             guard let highResolution = highResolution, let thumbnail = thumbnail else { return nil }
             
-            return Photo(thumbnail: thumbnail, highResolution: highResolution)
+            return Photo(thumbnail: "https://www.kudosprime.com/gt7/\(thumbnail)", highResolution: "https://www.kudosprime.com/gt7/\(highResolution)")
         } ?? []
         
         return PhotoGallery(photos: photos)
