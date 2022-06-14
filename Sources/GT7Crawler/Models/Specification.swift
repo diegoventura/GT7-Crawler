@@ -9,9 +9,9 @@ import Foundation
 
 struct Specification {
     let price: Double
-    let power: Int
-    let transmission: Transmission
-    let weight: Double
-    let aspiration: Aspiration
+    let power: Int?
+    let transmission: Transmission?
+    let weight: Double?
+    let aspiration: Aspiration?
     let group: CarGroup
 }

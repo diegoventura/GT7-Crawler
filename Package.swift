@@ -5,8 +5,11 @@ import PackageDescription
 
 let package = Package(
     name: "GT7Crawler",
+    platforms: [
+        .macOS(.v12)
+    ],
     dependencies: [
-        .package(url: "https://github.com/scinfu/SwiftSoup.git", from: "2.4.3"),
+        .package(url: "https://github.com/scinfu/SwiftSoup.git", from: "2.4.3")
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.

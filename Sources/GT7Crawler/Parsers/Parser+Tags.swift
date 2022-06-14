@@ -8,7 +8,7 @@
 import Foundation
 
 extension Parser {
-    func parseTags() -> [String] {
-        (try? document.getElementsByClass("car_tags").first()?.getElementsByTag("b").compactMap { try? $0.text() }) ?? []
+    func parseTags() async throws -> [String] {
+        (try document.getElementsByClass("car_tags").first()?.getElementsByTag("b").compactMap { try $0.text() }) ?? []
     }
 }

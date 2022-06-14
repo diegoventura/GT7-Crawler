@@ -8,8 +8,13 @@
 import Foundation
 
 enum Transmission: String {
+    case ff
     case fr
     case fwd
     case rwd
+    case rr
     case awd
+    case fourwd = "4wd"
+    case mr
+    case unknown = "??"
 }

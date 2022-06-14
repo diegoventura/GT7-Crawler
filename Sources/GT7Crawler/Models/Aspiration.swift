@@ -9,4 +9,8 @@ import Foundation
 
 enum Aspiration: String {
     case turbo = "T"
+    case natural = "NA"
+    case electricMotor = "EV"
+    case supercharged = "SC"
+    case unknown = "??"
 }

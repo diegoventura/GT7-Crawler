@@ -9,4 +9,9 @@ import Foundation
 
 enum CarGroup: String {
     case none = "No Gr"
+    case one = "Gr.1"
+    case two = "Gr.2"
+    case three = "Gr.3"
+    case four = "Gr.4"
+    case b = "Gr.B"
 }
