@@ -12,9 +12,11 @@ struct Crawler {
     static func main() async throws {
         print("🏁 Started parsing cars")
         
-        let fileURLs = try FileLoader.load(at: "~/gt7crawler/data/html/")
-        
+        let fileURLs = try FileLoader.load(at: "~/Developer/personal/GT7-Crawler/data/html/")
+
         let time = try await measure {
+            var cars = [Car]()
+            
             await fileURLs.concurrentForEach { url in
                 guard let content = try? String(contentsOf: url) else { return }
                 
@@ -39,9 +41,33 @@ struct Crawler {
                                         source: source)
                 
                 print("ℹ️ Parsed car \(car.name) [\(String(format: "%03d", Int(car.identifier)!))/\(fileURLs.count)]")
+
+                cars.append(car)
             }
+
+            print("ℹ️ Saving JSON")
+            try save(jsonObject: cars, at: "Developer/personal/GT7-Crawler/", named: "cars.json")
         }
         
         print("🎉 Finished in \(time)")
+    }
+
+    @discardableResult
+    static func save(jsonObject: Encodable, at destination: String, named filename: String) throws -> Bool {
+        let homePath = FileManager.default.homeDirectoryForCurrentUser
+        let desktopPath = homePath.appendingPathComponent(destination)
+        let filePath = desktopPath.appendingPathComponent(filename)
+                
+        do {
+            let encoder = JSONEncoder()
+            encoder.outputFormatting = .prettyPrinted
+            let data = try encoder.encode(jsonObject)
+            guard let jsonString = String(data: data, encoding: .utf8) else { return false }
+            
+            try jsonString.write(to: filePath, atomically: true, encoding: .utf8)
+            return true
+        } catch {
+            return false
+        }
     }
 }

@@ -7,6 +7,6 @@
 
 import Foundation
 
-struct PhotoGallery: Encodable {
+struct PhotoGallery: Codable {
     let photos: [Photo]
 }

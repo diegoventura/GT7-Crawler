@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum Aspiration: String {
+enum Aspiration: String, Codable {
     case turbo = "T"
     case natural = "NA"
     case electricMotor = "EV"

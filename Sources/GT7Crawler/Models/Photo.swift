@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Photo: Encodable {
+struct Photo: Codable {
     let thumbnail: String
     let highResolution: String
 }

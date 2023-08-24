@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Car {
+struct Car: Codable {
     let identifier: String
     let name: String
     let manufacturer: String

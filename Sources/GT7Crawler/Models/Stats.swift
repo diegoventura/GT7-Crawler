@@ -7,14 +7,14 @@
 
 import Foundation
 
-struct Stats {
-    enum Category: String {
+struct Stats: Codable {
+    enum Category: String, Codable {
         case acceleration
         case stability
         case grip
     }
     
-    struct Data {
+    struct Data: Codable {
         let key: String
         let value: String
     }

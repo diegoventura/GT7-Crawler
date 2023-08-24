@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum Transmission: String {
+enum Transmission: String, Codable {
     case ff
     case fr
     case fwd

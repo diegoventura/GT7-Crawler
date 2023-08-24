@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Specification {
+struct Specification: Codable {
     let price: Double
     let power: Int?
     let transmission: Transmission?

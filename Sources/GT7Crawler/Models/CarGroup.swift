@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum CarGroup: String {
+enum CarGroup: String, Codable {
     case none = "No Gr"
     case one = "Gr.1"
     case two = "Gr.2"
