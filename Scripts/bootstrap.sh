@@ -45,7 +45,10 @@ function download_car() {
 }
 
 function main() {
-    local folder="./data/html"
+    current_directory=$(pwd)
+    custom_folder="data/html"
+    folder="${current_directory}/${custom_folder}"
+
     download_all $folder
 }
 
