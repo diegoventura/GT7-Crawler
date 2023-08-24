@@ -8,7 +8,7 @@ function download_all() {
     folder=${parameters[0]}
     
     unset parameters[0]
-    totalCars=431
+    totalCars=481
     
     [ -d $folder ] && echo "Directory Exists" || mkdir -p $folder
 
