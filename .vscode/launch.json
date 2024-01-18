@@ -1,0 +1,28 @@
+{
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "sourceLanguages": [
+                "swift"
+            ],
+            "name": "Debug GT7Crawler",
+            "program": "${workspaceFolder:GT7-Crawler}/.build/debug/GT7Crawler",
+            "args": [],
+            "cwd": "${workspaceFolder:GT7-Crawler}",
+            "preLaunchTask": "swift: Build Debug GT7Crawler"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "sourceLanguages": [
+                "swift"
+            ],
+            "name": "Release GT7Crawler",
+            "program": "${workspaceFolder:GT7-Crawler}/.build/release/GT7Crawler",
+            "args": [],
+            "cwd": "${workspaceFolder:GT7-Crawler}",
+            "preLaunchTask": "swift: Build Release GT7Crawler"
+        }
+    ]
+}
